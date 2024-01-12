@@ -13,8 +13,11 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <main>
-        <div class="latest">
-            <img src="issues\images\cover.png"></img>
+        <div class="cover">
+            <!--ADD BACKGROUND IMAGE-->
+            <div class="latest">
+                    <h3>Nuclear Energy</h3>
+            </div>
         </div>
         </main>
         <script src="" async defer></script>
