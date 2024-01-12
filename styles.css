@@ -20,20 +20,20 @@ body {
 /*lovely header that wasted one week because of typos :>*/
 header {
     margin: 0;
-    position: fixed;
-    height: 80px;
+    position: relative;
+    height: 10%;
     top: 0;
     z-index: 999;
     font-family: Joliet;
     width: 100%;
-    background-image: repeating-linear-gradient(180deg, lightgray, gainsboro, silver);
+    background-image: repeating-linear-gradient(190deg,#000000,#1B1212,	#28282B, #36454F, #596c79);
 }
 
 /*logo css*/
 
 .headlogo {
     display: inline-flex;
-    height:  80px;
+    height:  100%;
     font-size: 30px;
 }
 .headlogo a, p{
@@ -48,11 +48,19 @@ header {
 }
 .logo {
     margin-left: -20px;
-    max-height: 100%;
-    max-width: 100%;
+    width: 100%;
 }
 
 .logo img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.latest{
+    max-width: 100%;
+}
+
+.latest img {
     height: 100%;
     width: 100%;
 }
@@ -60,15 +68,19 @@ header {
 .topnav button#donate {
     align-self: center;
     border-radius: 30%;
-    background-color: black;
-    color: white;
+    background-color: whitesmoke;
+    color: black;
     border-color: black;
     border-style: solid;
     font-family: "Joliet";
-    width: 80px;
     cursor: pointer;
     margin-top: 0;
-    font-size: 25px;
+    float: right;
+    font-size: 30px;
+}
+
+.topnav button#donate:active{
+    text-decoration: none;
 }
 
 .topnav button#donate:hover {
@@ -87,9 +99,9 @@ This class makes the topnav look good on small screens (display the links vertic
 .topnav a:nth-child(n+1){
     float: left;
     display: block;
-    color: black;
+    color: whitesmoke;
     text-align: center;
-    padding: 14px 20px;
+    padding: 20px 20px;
     text-decoration: none;
     font-size: 20px;
 }
