@@ -1,5 +1,4 @@
 html {
-    background-color: aliceblue;
     height: 100%;
 }
 
@@ -11,12 +10,21 @@ body {
     flex-direction: column;
     width: 100%;
 }
-
+/*important fonts*/
 @font-face {
     font-family: "Joliet";
     src: url(joliet-regular.otf);
 }
 
+@font-face {
+    font-family: "Glacial";
+    src: url("glacial.otf");
+}
+
+@font-face {
+    font-family: "lovelo";
+    src: url(lovelo.otf);
+}
 /*lovely header that wasted one week because of typos :>*/
 header {
     margin: 0;
@@ -56,13 +64,13 @@ header {
     max-width: 100%;
 }
 
-.latest{
+.cover{
     max-width: 100%;
+    height: 90%;
 }
-
-.latest img {
-    height: 100%;
+.cover img{
     width: 100%;
+    height: 81%;
 }
 
 .topnav button#donate {
