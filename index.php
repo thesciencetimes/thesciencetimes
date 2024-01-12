@@ -1,6 +1,5 @@
 <?php
     require_once "header.html";
-    require_once "footer.html";
 ?>
 
 <!DOCTYPE html>
@@ -14,9 +13,13 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="latest">
-            <img></img>
+            <img src="issues\images\cover.png"></img>
         </div>
 
         <script src="" async defer></script>
     </body>
 </html>
+
+<?php    
+    require_once "footer.html";
+?>
