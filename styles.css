@@ -210,8 +210,6 @@ footer {
     background-image: repeating-linear-gradient(170deg,#000000,#1B1212,	#28282B, #36454F, #596c79);
     color: whitesmoke;
     font-family: "Joliet";
-    padding: 100px;
-    overflow-y: hidden;
     text-decoration:none;
 }
 
