@@ -65,6 +65,7 @@ header {
 }
 
 .cover{
+<<<<<<< Updated upstream
     width: 100%;
     height: 70%;
 }
@@ -72,16 +73,36 @@ header {
     width: 100%;
     height: 100%;
 }
+=======
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 100%;
+    height: 73%;
+}
+>>>>>>> Stashed changes
 
 .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+<<<<<<< Updated upstream
     margin:0; 
     padding: 0;
     color: whitesmoke;
+=======
+>>>>>>> Stashed changes
 }
+
+.centered h1{
+    font-family: "lovelo";
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+
 
 .topnav button#donate {
     align-self: center;
@@ -199,6 +220,10 @@ footer {
     width: 100%;
     height: 150px;
     background-image: repeating-linear-gradient(170deg,#000000,#1B1212,	#28282B, #36454F, #596c79);
+<<<<<<< Updated upstream
+=======
+    color: whitesmoke;
+>>>>>>> Stashed changes
     font-family: "Joliet";
     text-decoration:none;
     color: whitesmoke;
