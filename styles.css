@@ -211,6 +211,7 @@ footer {
     color: whitesmoke;
     font-family: "Joliet";
     padding: 100px;
+    overflow-y: hidden;
     text-decoration:none;
 }
 
