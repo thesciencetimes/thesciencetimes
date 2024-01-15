@@ -28,8 +28,8 @@ body {
 /*lovely header that wasted one week because of typos :>*/
 header {
     margin: 0;
-    position: relative;
-    height: 10%;
+    position: fixed;
+    height: 80px;
     top: 0;
     z-index: 999;
     font-family: Joliet;
@@ -210,8 +210,14 @@ footer {
     background-image: repeating-linear-gradient(170deg,#000000,#1B1212,	#28282B, #36454F, #596c79);
     color: whitesmoke;
     font-family: "Joliet";
-    height: 30%;
+    font-size: 20px;
+    height: 110px;
     text-decoration:none;
+}
+
+.footer{
+    height: 90px;
+    padding: 10px 20px;
 }
 
 .address address {
