@@ -211,11 +211,11 @@ footer {
     color: whitesmoke;
     font-family: "Joliet";
     text-decoration:none;
-    height: 100px;  
+    padding: 3px;
 }
 
-.footer {
-    height: 100%;
+.footer {    
+    height: 100px;  
 }
 
 .address address {
