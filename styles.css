@@ -72,6 +72,10 @@ header {
     height: 73%;
 }
 
+.cover img{
+    width:100%;
+}
+
 .centered {
     position: absolute;
     top: 50%;
