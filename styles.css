@@ -69,12 +69,14 @@ header {
     text-align: center;
     color: white;
     max-width: 100%;
-    height: 73%;
+    height: 70%;
 }
 
 .cover img{
-    width:100%;
+    width: 100%;
+    height: 100%;
 }
+
 
 .centered {
     position: absolute;
@@ -85,7 +87,6 @@ header {
 
 .centered h1{
     font-family: "lovelo";
-    font-size: 50px;
     padding: 0;
     margin: 0;
 }
@@ -206,15 +207,14 @@ This class makes the topnav look good on small screens (display the links vertic
 footer {
     margin-top: auto;
     width: 100%;
-    height: 150px;
     background-image: repeating-linear-gradient(170deg,#000000,#1B1212,	#28282B, #36454F, #596c79);
     color: whitesmoke;
     font-family: "Joliet";
     text-decoration:none;
+    height: 150px;  
 }
 
 .footer {
-    margin: 15px 20px;
 }
 
 .address address {
