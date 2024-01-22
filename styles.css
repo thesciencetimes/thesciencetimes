@@ -25,43 +25,36 @@ body {
     font-family: "lovelo";
     src: url(lovelo.otf);
 }
+/*media*/
+@media only screen and (max-width:1288px){
+    .topnav a{
+        float:none;
+    }
+}
+
 /*lovely header that wasted one week because of typos :>*/
 header {
     margin: 0;
-    position: fixed;
+    position: relative;
     height: 80px;
     top: 0;
     z-index: 999;
     font-family: Joliet;
     width: 100%;
-    background-image: repeating-linear-gradient(190deg,#000000,#1B1212,	#28282B, #36454F, #596c79);
+    background-color: black;
 }
 
 /*logo css*/
-
-.headlogo {
-    display: inline-flex;
-    height:  100%;
-    font-size: 30px;
-}
-.headlogo a, p{
-    margin-top: 10px;
-    margin-left: 10px;
-    color: black;
-    text-decoration: none;
-}
-
-.headlogo a:hover{
-    color: yellowgreen;
-}
 .logo {
-    margin-left: -20px;
-    width: 100%;
+    margin: 0;
+    max-width: 235px;
+    max-height: 80px;
+    float: left;
 }
 
 .logo img {
     height: 100%;
-    max-width: 100%;
+    width: 100%;
 }
 
 .cover{
