@@ -80,11 +80,43 @@ header {
 
 .centered h1{
     font-family: "lovelo";
+    margin-top: 0.001vw;
+    margin-bottom: 0.005vw;
+    font-size: 4.5vw;
+}
+
+.centered h2{
+    font-family: "Glacial";
+    font-size: 1.85vw;
     padding: 0;
     margin: 0;
 }
+.centered p{
+    font-family: "Glacial";
+    padding: 0;
+    margin: 0;
+    font-size: 1.95vw;
 
+}
 
+.centered .titleau{
+    font-family: "Glacial";
+    padding: 0;
+    margin: 1.0001vw;
+    font-size: 1.95vw;
+}
+
+.centered .titleau a{
+    text-decoration: none;
+    font-weight: bold;
+    color: beige;
+}
+
+.centered .titleau a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: yellowgreen;
+}
 
 .topnav button#donate {
     align-self: center;
@@ -200,8 +232,7 @@ This class makes the topnav look good on small screens (display the links vertic
 footer {
     margin-top: auto;
     width: 100%;
-    background-image: repeating-linear-gradient(170deg,#000000,#1B1212,	#28282B, #36454F, #596c79);
-    color: whitesmoke;
+    background-color: whitesmoke;
     font-family: "Joliet";
     font-size: 20px;
     height: 110px;
