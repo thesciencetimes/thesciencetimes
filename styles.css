@@ -99,7 +99,47 @@ header {
 
 }
 
+.centered .titleau{
+    font-family: "Glacial";
+    padding: 0;
+    margin: 1.0001vw;
+    font-size: 1.95vw;
+}
 
+.centered .titleau a{
+    text-decoration: none;
+    font-weight: bold;
+    color: beige;
+}
+
+.centered a{
+    text-decoration: none;
+    font-weight: bold;
+    color: blanchedalmond;
+}
+
+.centered .title{
+    text-decoration: none;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.centered .title a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: yellowgreen;
+}
+
+.centered .titleau a:hover, .centered a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: yellowgreen;
+}
+
+.centered .issue1 {
+    color: olivedrab;
+    text-decoration: none;
+}
 
 .topnav button#donate {
     align-self: center;
