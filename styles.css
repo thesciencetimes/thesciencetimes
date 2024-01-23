@@ -259,6 +259,8 @@ footer {
     font-family: "Joliet";
     font-size: 20px;
     height: 110px;
+    font-style: normal;
+
     text-decoration:none;
 }
 
@@ -267,7 +269,7 @@ footer {
     padding: 10px 20px;
 }
 
-.address address {
+.address p {
     font-size: 20px;
     font-style: normal;
 }
