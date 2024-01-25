@@ -251,6 +251,12 @@ This class makes the topnav look good on small screens (display the links vertic
 }
 
 /*add into laptop query*/
+
+/*ISSUES DISPLAY: BLOCK*/
+.issue_display a{
+    display: flex;
+    width: 100px;
+}
 /*FOOTER ><*/
 footer {
     margin-top: auto;
