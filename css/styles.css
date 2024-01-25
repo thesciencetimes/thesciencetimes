@@ -13,17 +13,17 @@ body {
 /*important fonts*/
 @font-face {
     font-family: "Joliet";
-    src: url(joliet-regular.otf);
+    src: url(../joliet-regular.otf);
 }
 
 @font-face {
     font-family: "Glacial";
-    src: url("glacial.otf");
+    src: url("../glacial.otf");
 }
 
 @font-face {
     font-family: "lovelo";
-    src: url(lovelo.otf);
+    src: url("../lovelo.otf");
 }
 /*media*/
 @media only screen and (max-width:1288px){
