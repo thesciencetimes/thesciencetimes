@@ -9,6 +9,7 @@ body {
     height: 100%;
     flex-direction: column;
     width: 100%;
+    object-fit: contain;
 }
 /*important fonts*/
 @font-face {
@@ -57,89 +58,6 @@ header {
     width: 100%;
 }
 
-.cover{
-    position: relative;
-    text-align: center;
-    color: white;
-    max-width: 100%;
-    height: 70%;
-}
-
-.cover img{
-    width: 100%;
-    height: 100%;
-}
-
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.centered h1{
-    font-family: "lovelo";
-    margin-top: 0.001vw;
-    margin-bottom: 0.005vw;
-    font-size: 4.5vw;
-}
-
-.centered h2{
-    font-family: "Glacial";
-    font-size: 1.85vw;
-    padding: 0;
-    margin: 0;
-}
-.centered p{
-    font-family: "Glacial";
-    padding: 0;
-    margin: 0;
-    font-size: 1.95vw;
-
-}
-
-.centered .titleau{
-    font-family: "Glacial";
-    padding: 0;
-    margin: 1.0001vw;
-    font-size: 1.95vw;
-}
-
-.centered .titleau a{
-    text-decoration: none;
-    font-weight: bold;
-    color: beige;
-}
-
-.centered a{
-    text-decoration: none;
-    font-weight: bold;
-    color: blanchedalmond;
-}
-
-.centered .title{
-    text-decoration: none;
-    font-weight: bold;
-    color: whitesmoke;
-}
-
-.centered .title a:hover{
-    text-decoration: none;
-    font-weight: bold;
-    color: yellowgreen;
-}
-
-.centered .titleau a:hover, .centered a:hover{
-    text-decoration: none;
-    font-weight: bold;
-    color: yellowgreen;
-}
-
-.centered .issue1 {
-    color: olivedrab;
-    text-decoration: none;
-}
 
 .topnav button#donate {
     align-self: center;
@@ -264,18 +182,44 @@ footer {
     background-color: whitesmoke;
     font-family: "Joliet";
     font-size: 20px;
-    height: 110px;
+    height: 20%;
     font-style: normal;
 
     text-decoration:none;
 }
 
 .footer{
-    height: 90px;
     padding: 10px 20px;
 }
 
 .address p {
     font-size: 20px;
     font-style: normal;
+}
+
+
+/*all text html????,HTML*/
+.modal{
+    height: 300px;
+    position: relative;
+    text-align: center;
+    background-color: #1f2937;
+}
+
+.modal .text{
+    font-family: "lovelo";
+    font-size: 85px;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: gainsboro;
+    transform: translate(-50%, -50%);
+    padding:0;
+    margin:0;
+    text-decoration: underline;
+}
+
+.article{
+
 }
