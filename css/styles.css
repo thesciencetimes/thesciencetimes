@@ -190,6 +190,7 @@ footer {
 
 .footer{
     padding: 10px 20px;
+    letter-spacing: 0.1vw;
 }
 
 .address p {
@@ -219,18 +220,23 @@ footer {
     margin:0;
     text-decoration: underline;
 }
-
+.agenda{
+    padding-left: 3vh;
+}
 .box-article:first-child{
-    margin-top: 2vw;
+    margin-top: 3vw;
+}
+
+.box-article:last-child{
+    border-bottom: 0px;
 }
 
 .box-article {
     padding-left: 2vw;
     padding-right: 2vw;
     padding-bottom: 2vw;
-    border-radius: 2vw;
+    border-bottom: 2px black solid;
     margin-bottom: 2vw;
-    border-style: groove;
     width: 50vw;
     margin-left: 5vw;
 }
@@ -242,4 +248,14 @@ footer {
     text-decoration: none;
     letter-spacing: 2px;
     color: rgb(0, 0, 0);
+}
+
+.ari-author{
+    font-weight: normal;
+}
+
+.ari-author a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
 }
