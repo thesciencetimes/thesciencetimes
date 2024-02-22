@@ -219,7 +219,7 @@ footer {
     padding:0;
     margin:0;
     text-decoration: underline;
-    text-underline-position:below;
+    text-underline-position:under;
 }
 .agenda{
     padding-left: 3vh;
