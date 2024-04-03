@@ -1,0 +1,44 @@
+.article_out_contain{
+    margin-right: 10vw;
+    margin-left: 10vw;
+    text-align: left;
+}
+.article_in_contain{
+    margin:  50px;
+}
+
+.post_top h1{
+    font-family: 'Joliet';
+    font-size: 63px;
+    font-weight: 1000;
+    margin-bottom: 19px;
+}
+
+.post_top a{
+    text-decoration: none;
+    color: black;
+}
+
+.post_top a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.post_top a:active{
+    text-decoration: none;
+    color: black;
+}
+
+.post_top h3{
+    font-family: 'Glacial';
+    margin-top: 10px;
+    font-weight: 550;
+    font-size: 40px;
+}
+
+.post_top p #time{
+    margin-top: -25px;
+    font-family: 'Glacial';
+    font-weight: 500;
+}
+
