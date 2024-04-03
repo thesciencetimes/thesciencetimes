@@ -11,6 +11,7 @@ body {
     width: 100%;
     object-fit: contain;
 }
+
 /*important fonts*/
 @font-face {
     font-family: "Joliet";
@@ -26,10 +27,11 @@ body {
     font-family: "lovelo";
     src: url("../lovelo.otf");
 }
+
 /*media*/
-@media only screen and (max-width:1288px){
-    .topnav a{
-        float:none;
+@media only screen and (max-width:1288px) {
+    .topnav a {
+        float: none;
     }
 }
 
@@ -73,13 +75,14 @@ header {
     font-size: 30px;
 }
 
-.topnav button#donate:active{
+.topnav button#donate:active {
     text-decoration: none;
 }
 
 .topnav button#donate:hover {
     color: yellowgreen;
 }
+
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
 This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 /* Add a black background color to the top navigation */
@@ -90,7 +93,7 @@ This class makes the topnav look good on small screens (display the links vertic
 }
 
 /* Style the links inside the navigation bar */
-.topnav a:nth-child(n+1){
+.topnav a:nth-child(n+1) {
     float: left;
     display: block;
     color: whitesmoke;
@@ -171,26 +174,28 @@ This class makes the topnav look good on small screens (display the links vertic
 /*add into laptop query*/
 
 /*ISSUES DISPLAY: BLOCK*/
-.issue_display a{
+.issue_display a {
     display: flex;
     width: 100px;
 }
+
 /*FOOTER ><*/
 footer {
     margin-top: auto;
     width: 100%;
-    background-color: whitesmoke;
     font-family: "Joliet";
     font-size: 20px;
     height: 20%;
     font-style: normal;
 
-    text-decoration:none;
+    text-decoration: none;
 }
 
-.footer{
+.footer {
     padding: 10px 20px;
     letter-spacing: 0.1vw;
+    background-color: #D3D3D3;
+    font-weight: 600;
 }
 
 .address p {
@@ -200,14 +205,14 @@ footer {
 
 
 /*all text html????,HTML*/
-.modal{
+.modal {
     height: 300px;
     position: relative;
     text-align: center;
     background-color: #1f2937;
 }
 
-.modal .text{
+.modal .text {
     font-family: "lovelo";
     font-size: 85px;
     font-weight: bolder;
@@ -216,19 +221,21 @@ footer {
     left: 50%;
     color: gainsboro;
     transform: translate(-50%, -50%);
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     text-decoration: underline;
-    text-underline-position:under;
+    text-underline-position: under;
 }
-.agenda{
+
+.agenda {
     padding-left: 3vh;
 }
-.box-article:first-child{
+
+.box-article:first-child {
     margin-top: 3vw;
 }
 
-.box-article:last-child{
+.box-article:last-child {
     border-bottom: 0px;
 }
 
@@ -242,7 +249,7 @@ footer {
     margin-left: 5vw;
 }
 
-.ari-title{
+.ari-title {
     font-family: 'Joliet';
     font-size: 20px;
     font-weight: bolder;
@@ -251,12 +258,14 @@ footer {
     color: rgb(0, 0, 0);
 }
 
-.ari-author{
+.ari-author {
     font-weight: normal;
 }
 
-.ari-author a{
+.ari-author a {
     font-weight: bolder;
     text-decoration: none;
     color: black;
+    font-family: 'lovelo';
+    font-size: 22px;
 }
