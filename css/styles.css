@@ -20,6 +20,11 @@ body {
 
 @font-face {
     font-family: "Glacial";
+    src: url("../spartan.ttf");
+}
+
+@font-face {
+    font-family: "Spartan";
     src: url("../glacial.otf");
 }
 
