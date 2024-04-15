@@ -36,9 +36,18 @@
     font-size: 40px;
 }
 
-.post_top p #time{
+.post_top #time{
     margin-top: -25px;
     font-family: 'Glacial';
     font-weight: 500;
 }
 
+.post_top #lead-in{
+    font-family: 'Glacial';
+    font-weight: 500;
+}
+
+.content p{
+    font-family: 'Glacial';
+    font-weight: 500;
+}
