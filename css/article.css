@@ -60,3 +60,7 @@
     font-family: "Glacial";
     font-weight: 600;
 }
+
+#image{
+    max-width: 100%;
+}
