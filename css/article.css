@@ -61,6 +61,6 @@
     font-weight: 600;
 }
 
-#image{
-    max-width: 100%;
+fig{
+    align-items: center;
 }
