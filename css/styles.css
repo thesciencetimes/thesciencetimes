@@ -200,17 +200,23 @@ footer {
     padding: 10px 20px;
     letter-spacing: 0.1vw;
     font-weight: 600;
+    display: block;
 }
 
 .address p {
     font-size: 20px;
     font-style: normal;
+    text-align: left;
+    position: absolute;
 }
 
 .copy {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.copyright{
+    text-align: center;
+}
 
 /*all text html????,HTML*/
 .modal {
