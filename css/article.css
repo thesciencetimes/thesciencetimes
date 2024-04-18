@@ -3,8 +3,17 @@
     margin-left: 10vw;
     text-align: left;
 }
+
+@media screen and (min-width: 700px){
+    .article_in_contain{
+        width: 700px;
+    }
+}
+
 .article_in_contain{
-    margin:  50px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
 }
 
 .post_top h1{
@@ -14,17 +23,17 @@
     margin-bottom: 19px;
 }
 
-.post_top a{
+a{
     text-decoration: none;
     color: black;
 }
 
-.post_top a:hover{
+a:hover{
     text-decoration: none;
     color: black;
 }
 
-.post_top a:active{
+a:active{
     text-decoration: none;
     color: black;
 }
@@ -40,27 +49,67 @@
     margin-top: -25px;
     font-family: 'Glacial';
     font-weight: 500;
+    font-size: 16px;
 }
 
 .post_top #lead-in{
     font-family: 'Glacial';
     font-weight: 500;
+    font-size: 18px;
 }
 
-.content p{
+
+.content p, figcaption{
     font-family: 'Glacial';
+    font-size: 19px;
 }
 
 .article_subhead{
     font-family: "Spartan";
     font-weight: 700;
+    font-size: 30px;
 }
 
 .article_sub_subhead{
     font-family: "Glacial";
     font-weight: 600;
+    font-size: 23px;
 }
 
-fig{
-    align-items: center;
+#image {
+    max-width: 87%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post_top #image {
+    max-width: 87%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 21px;
+}
+
+section{
+    padding-top: 2vh;
+}
+
+div #ref{
+    word-wrap: break-word;
+}
+
+.ref h3{
+    font-family: "Spartan";
+    font-size: 30px;
+}
+
+.ref p{
+    font-family: "Glacial";
+    font-size: 19px; 
 }

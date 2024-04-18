@@ -38,6 +38,7 @@ body {
     .topnav a {
         float: none;
     }
+    
 }
 
 /*lovely header that wasted one week because of typos :>*/
@@ -192,18 +193,22 @@ footer {
     font-size: 20px;
     font-style: normal;
     text-decoration: none;
+    background-color: #D3D3D3;
 }
 
 .footer {
     padding: 10px 20px;
     letter-spacing: 0.1vw;
-    background-color: #D3D3D3;
     font-weight: 600;
 }
 
 .address p {
     font-size: 20px;
     font-style: normal;
+}
+
+.copy {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -238,7 +243,7 @@ footer {
     margin-top: 3vw;
 }
 
-.box-article:last-child {
+.box-article:last-of-type {
     border-bottom: 0px;
 }
 
@@ -251,6 +256,11 @@ footer {
     width: 50vw;
     margin-left: 5vw;
 }
+
+.box-article {
+    font-family: 'Glacial';
+}
+
 
 .ari-title {
     font-family: 'Joliet';
