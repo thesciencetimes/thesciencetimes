@@ -201,21 +201,25 @@ footer {
     letter-spacing: 0.1vw;
     font-weight: 600;
     display: block;
+    position:static;
+    letter-spacing: 0.33vw;
 }
 
 .address{
     font-size: 20px;
     font-style: normal;
     text-align: left;
-    position: absolute;
+    position: static;
 }
 
 .copy {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: static;
 }
 
 .copyright{
     text-align: center;
+    color:rgba(45, 20, 20, 0.442);
 }
 
 /*all text html????,HTML*/
