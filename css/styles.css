@@ -121,6 +121,14 @@ This class makes the topnav look good on small screens (display the links vertic
 
 .fa{
     text-decoration: none;
+    color: black;
+}
+
+.fa:active{
+    text-decoration: none;
+}
+.fa:hover{
+    opacity: 0.7;
 }
 /*index*/
 
