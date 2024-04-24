@@ -119,6 +119,9 @@ This class makes the topnav look good on small screens (display the links vertic
     display: none;
 }
 
+.fa{
+    text-decoration: none;
+}
 /*index*/
 
 /*LAPTOP VERSION
@@ -203,9 +206,6 @@ footer {
     display: block;
     position:static;
     letter-spacing: 0.33vw;
-}
-.footer a{
-    text-decoration: none;
 }
 .address{
     font-size: 20px;
