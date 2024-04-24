@@ -122,6 +122,7 @@ This class makes the topnav look good on small screens (display the links vertic
 .fa{
     text-decoration: none;
     color: black;
+    padding-left: 1vw;
 }
 
 .fa:active{
@@ -130,65 +131,6 @@ This class makes the topnav look good on small screens (display the links vertic
 .fa:hover{
     opacity: 0.7;
 }
-/*index*/
-
-/*LAPTOP VERSION
-/*.myTopNav ul li {
-    display: inline-block;
-    list-style-type: none;
-    height: 100%;
-    position: sticky;
-}
-
-.myTopNav a:first-child {
-    font-weight: 500;
-    padding: 5px 0 5px 10px;
-    font-size: 45px;
-    display: inline-flex;
-}
-
-.other a {
-    display: block;
-    line-height: 1em;
-    padding: 10px 21px;
-    margin-top: 10px;
-    text-decoration: none;
-    color: black;
-    height: 60px;
-}
-
-.myTopNav ul li a:hover {
-    color: yellowgreen;
-}
-
-.myTopNav #donate {
-    height: 55px;
-    align-self: center;
-    border-radius: 30%;
-    background-color: black;
-    color: white;
-    border-color: black;
-    border-style: solid;
-    font-family: "Joliet";
-    width: 100px;
-    cursor: pointer;
-    margin-top: -15px;
-    font-size: 30px;
-}
-
-.myTopNav button#donate:hover {
-    color: yellowgreen;
-}
-
-.myTopNav ul li:nth-of-type(2) {
-    margin-right: 12.5em;
-}
-
-.myTopNav .icon {
-    display: none;
-}
-
-/*add into laptop query*/
 
 /*ISSUES DISPLAY: BLOCK*/
 .issue_display a {
@@ -199,27 +141,26 @@ This class makes the topnav look good on small screens (display the links vertic
 /*FOOTER ><*/
 footer {
     margin-top: auto;
-    width: 100%;
     font-family: "Joliet";
     font-size: 20px;
     font-style: normal;
     text-decoration: none;
     background-color: #D3D3D3;
+    padding: 10px 20px;
 }
 
 .footer {
-    padding: 10px 20px;
-    letter-spacing: 0.1vw;
     font-weight: 600;
-    display: block;
-    position:static;
-    letter-spacing: 0.33vw;
+    letter-spacing: 0.3vw;
+    width: 100%;
 }
+
 .address{
     font-size: 20px;
     font-style: normal;
     text-align: left;
-    position: static;
+    position: relative;
+    display: block;
 }
 
 .copy {
@@ -232,6 +173,20 @@ footer {
     color:rgba(45, 20, 20, 0.626);
     letter-spacing: 2px;
     font-weight: 900;
+    display: block;
+}
+.icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.top_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*all text html????,HTML*/
