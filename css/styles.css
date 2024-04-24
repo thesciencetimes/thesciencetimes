@@ -230,7 +230,8 @@ footer {
 .copyright{
     text-align: center;
     color:rgba(45, 20, 20, 0.626);
-    letter-spacing: 5px;
+    letter-spacing: 2px;
+    font-weight: 900;
 }
 
 /*all text html????,HTML*/
