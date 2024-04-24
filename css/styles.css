@@ -204,7 +204,9 @@ footer {
     position:static;
     letter-spacing: 0.33vw;
 }
-
+.footer a{
+    text-decoration: none;
+}
 .address{
     font-size: 20px;
     font-style: normal;
@@ -219,7 +221,8 @@ footer {
 
 .copyright{
     text-align: center;
-    color:rgba(45, 20, 20, 0.442);
+    color:rgba(45, 20, 20, 0.626);
+    letter-spacing: 5px;
 }
 
 /*all text html????,HTML*/
