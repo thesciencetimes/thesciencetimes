@@ -4,9 +4,9 @@
     text-align: left;
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 728px){
     .article_in_contain{
-        width: 700px;
+        width: 728px;
     }
 }
 
@@ -76,7 +76,7 @@ a:active{
     font-size: 23px;
 }
 
-#image {
+.image_in img{
     max-width: 87%;
     display: block;
     margin-left: auto;
