@@ -1,0 +1,167 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+* {
+    margin: 0;
+  }
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+input, button, textarea, select {
+    font: inherit;
+  }
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+#root, #__next {
+    isolation: isolate;
+  }
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header a {
+  margin-bottom: -13px;
+}
+
+.navbar {
+  width: 736px;
+  height: 27px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  font-family: 'DegularDisplayDemoThin';
+  font-size: 20px;
+  color: #1C1B1F;
+  letter-spacing: -1%;
+}
+
+header hr {
+  width: 1244px;
+  height: 2px;
+  border: none;
+  background-color: #1C1B1F;
+}
+
+.hr1 {
+  margin-bottom: 3px;
+}
+
+.hr2 {
+  margin-bottom: 18px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vl {
+  height: 17px;
+  border: solid 1px #1c1b1f70;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 137.35px;
+  margin-bottom: 14px;
+}
+
+.info a {
+  font-family: 'DegularDisplayDemoThin';
+  font-size: 16px;
+  color: #1c1b1f70;
+  letter-spacing: -1%;
+}
+
+.title {
+  width: 495px;
+  height: auto;
+  font-family: 'DegularDisplayDemoSemiBold';
+  font-size: 69px;
+  line-height: 90%;
+  margin-bottom: 8px;
+}
+
+.body {
+  width: 274px;
+  font-family: 'DegularTextDemoThin';
+  font-size: 15px;
+  line-height: 105%;
+  letter-spacing: -0.5%;
+  margin-bottom: 5px;
+}
+
+.read {
+  display: flex;
+}
+
+.read a {
+  font-family: 'DegularDisplayDemoLight';
+  font-size: 15px;
+  letter-spacing: -0.5%;
+  color: #1C1B1F;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured1 {
+  display: flex;
+}
+
+.side {
+  margin-right: 21px;
+}
+
+.featured img {
+  width: 687px;
+  height: 392px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.credits {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'DegularDisplayDemoLight';
+  font-size: 15px;
+  letter-spacing: -0.5%;
+  margin-top: 1px;
+}
+
+.author {
+  display: flex;
+}
+
+.by {
+  margin-right: 3px;
+}
+
+.imgsrc {
+  display: flex;
+}
+
+.src {
+  margin-right: 3px;
+}
