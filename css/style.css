@@ -16,6 +16,7 @@ body {
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
+    object-fit: cover;
   }
 input, button, textarea, select {
     font: inherit;
@@ -52,7 +53,7 @@ header a {
   letter-spacing: -1%;
 }
 
-header hr {
+hr {
   width: 1244px;
   height: 2px;
   border: none;
@@ -76,19 +77,21 @@ main {
 .vl {
   height: 17px;
   border: solid 1px #1c1b1f70;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .info {
   display: flex;
   justify-content: space-between;
-  width: 137.35px;
+  width: fit-content;
   margin-bottom: 14px;
 }
 
 .info a {
   font-family: 'DegularDisplayDemoThin';
   font-size: 16px;
-  color: #1c1b1f70;
+  color: #1c1b1f80;
   letter-spacing: -1%;
 }
 
@@ -99,6 +102,7 @@ main {
   font-size: 69px;
   line-height: 90%;
   margin-bottom: 8px;
+  color: #1C1B1F;
 }
 
 .body {
@@ -138,30 +142,110 @@ main {
   width: 687px;
   height: 392px;
   border-radius: 5px;
-  object-fit: cover;
 }
 
 .credits {
   display: flex;
   justify-content: space-between;
-  font-family: 'DegularDisplayDemoLight';
-  font-size: 15px;
-  letter-spacing: -0.5%;
   margin-top: 1px;
 }
 
 .author {
   display: flex;
+  font-family: 'DegularDisplayDemoLight';
+  font-size: 15px;
+  letter-spacing: -0.5%;
 }
 
 .by {
   margin-right: 3px;
+  font-family: 'DegularDisplayDemoLight';
+  font-size: 15px;
+  letter-spacing: -0.5%;
 }
 
 .imgsrc {
   display: flex;
+  font-family: 'DegularDisplayDemoLight';
+  font-size: 15px;
+  letter-spacing: -0.5%;
 }
 
 .src {
   margin-right: 3px;
+  font-family: 'DegularDisplayDemoLight';
+  font-size: 15px;
+  letter-spacing: -0.5%;
+}
+
+.hr3 {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.title2 {
+  font-family: 'DegularDisplayDemoMedium';
+  font-size: 27px;
+  color: #1C1B1F;
+  line-height: 90%;
+}
+
+.body2 {
+  font-family: 'DegularTextDemoThin';
+  font-size: 15px;
+  line-height: 105%;
+  letter-spacing: 0.5%;
+  color: #1C1B1F;
+}
+
+.articles {
+  display: grid;
+  grid-template: auto auto auto / auto auto;
+  row-gap: 27px;
+  column-gap: 31px;
+}
+
+.vl2 {
+  height: 939px;
+  width: 1px;
+  background-color: #1C1B1F;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.crossword {
+  font-family: 'AbrilFatface' !important;
+  font-size: 15px;
+  color: #1C1B1F !important;
+}
+
+.fun {
+  width: 290px;
+  height: fit-content;
+  background-color: #F7DA21;
+  border-radius: 5px;
+  border-top: 1px solid #1C1B1F;
+  border-left: 1px solid #1C1B1F;
+  border-right: 1px solid #1C1B1F;
+  border-bottom: 7px solid #1C1B1F;
+}
+
+.info2 {
+  display: flex;
+}
+
+.info2 img {
+  margin-left: 12px;
+}
+
+.info2 div {
+  width: 138px;
+  height: auto;
+  margin-left: 14px;
+}
+
+.info2 div a {
+  font-family: 'DegularDisplayDemoBold';
+  font-size: 30px;
+  line-height: 90%;
 }

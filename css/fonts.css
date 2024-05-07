@@ -32,3 +32,8 @@
     font-family: DegularTextDemoThin;
     src: url("/fonts/DegularTextDemo-Thin.otf");
 }
+
+@font-face {
+    font-family: AbrilFatface;
+    src: url("/fonts/AbrilFatface-Regular.ttf");
+}
