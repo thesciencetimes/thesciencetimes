@@ -10,6 +10,24 @@
     }
 }
 
+@media screen and (min-width: 1043px){
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1042px){
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+    }
+}
+
 .article_in_contain{
     margin-right: auto;
     margin-left: auto;
