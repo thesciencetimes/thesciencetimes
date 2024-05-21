@@ -1,17 +1,17 @@
-.article_out_contain{
+.article_out_contain {
     margin-right: 10vw;
     margin-left: 10vw;
     text-align: left;
 }
 
-@media screen and (min-width: 728px){
-    .article_in_contain{
+@media screen and (min-width: 728px) {
+    .article_in_contain {
         width: 720px;
     }
 }
 
-@media screen and (min-width: 1043px){
-    .header{
+@media screen and (min-width: 1043px) {
+    .header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -19,8 +19,8 @@
     }
 }
 
-@media screen and (max-width: 1042px){
-    .header{
+@media screen and (max-width: 1042px) {
+    .header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -28,74 +28,75 @@
     }
 }
 
-.article_in_contain{
+.article_in_contain {
     margin-right: auto;
     margin-left: auto;
     display: block;
     box-sizing: border-box;
 }
 
-.post_top h1{
+.post_top h1 {
     font-family: 'Joliet';
     font-size: 63px;
     font-weight: 1000;
     margin-bottom: 19px;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
     color: black;
 }
 
-a:active{
+a:active {
     text-decoration: none;
     color: black;
 }
 
-.post_top h3{
+.post_top h3 {
     font-family: 'Glacial';
     margin-top: 10px;
     font-weight: 550;
     font-size: 40px;
 }
 
-.post_top #time{
+.post_top #time {
     margin-top: -25px;
     font-family: 'Glacial';
     font-weight: 500;
     font-size: 16px;
 }
 
-.post_top #lead-in{
+.post_top #lead-in {
     font-family: 'Glacial';
     font-weight: 500;
     font-size: 18px;
 }
 
 
-.content p, figcaption{
+.content p,
+figcaption {
     font-family: 'Glacial';
     font-size: 19px;
 }
 
-.article_subhead{
+.article_subhead {
     font-family: "Spartan";
     font-weight: 700;
     font-size: 30px;
 }
 
-.article_sub_subhead{
+.article_sub_subhead {
     font-family: "Glacial";
     font-weight: 600;
     font-size: 23px;
 }
 
-.image_in img{
+.image_in img {
     max-width: 87%;
     display: block;
     margin-left: auto;
@@ -109,26 +110,102 @@ a:active{
     margin-right: auto;
 }
 
-figcaption{
+/* table of contents customization */
+.table_of_contents {
+    width: 100%;
+    background-color: rgba(220, 220, 220, 0.484);
+    display: flex;
+    flex-direction: column;
+}
+
+.top_table{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_table h3{
+    padding: 5px;
+    font-size: 30px;
+    float: left;
+    margin:10px;
+    font-family: 'Joliet';
+    letter-spacing: 5px;
+    font-weight:900;
+    font-style: italic;
+}
+
+.top_table .container{
+    float: right;
+    vertical-align:middle;
+    margin-right: 10px;
+}
+/*<!-- https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+ */
+
+ .list{
+    background-color: #e6e8e6;
+    margin:0;
+    padding-top: 10px;
+    font-family: 'Glacial';
+    font-style: bold;
+    font-size: 20px;
+ }
+
+ .list li+li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+ .list li:first-of-type{
+        padding-top: 10px;
+        padding-bottom: 10px;
+ }
+
+.title{
+    margin-left: 10px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+figcaption {
     margin-top: 10px;
     text-align: center;
     font-size: 21px;
 }
 
-section{
+section {
     padding-top: 2vh;
 }
 
-div #ref{
+div #ref {
     word-wrap: break-word;
 }
 
-.ref h3{
+.ref h3 {
     font-family: "Spartan";
     font-size: 30px;
 }
 
-.ref p{
+.ref p {
     font-family: "Glacial";
-    font-size: 19px; 
+    font-size: 19px;
 }
