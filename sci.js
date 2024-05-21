@@ -1,5 +1,4 @@
 
-
 function show(x) {
     x.classList.toggle("change");
     if (document.getElementById("list").style.display== "block") {
