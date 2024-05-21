@@ -1,2 +1,12 @@
-const table_ofcontent = document.querySelector('.container');
-table_ofcontent.addEventListener('click', moveUp);
+
+
+function show(x) {
+    x.classList.toggle("change");
+    if (document.getElementById("list").style.display== "block") {
+        document.getElementById("list").style.display = "none";
+    }
+    else {
+        document.getElementById("list").style.display = "block";
+    }
+}
+
