@@ -32,6 +32,10 @@ body {
     .topnav{
         display: none;
     }
+    .container1 {
+        display: inline-block;
+        cursor: pointer;
+      }
 
     .topnav2{
         display: none;
@@ -156,11 +160,6 @@ This class makes the topnav look good on small screens (display the links vertic
     display: none;
 }
 
-
-.container1{
-    color: blue;
-    padding: 10px;
-}
 
 
 .fa{
