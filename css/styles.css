@@ -20,7 +20,10 @@ body {
         height: 100%;
     }
 
-    .container1, .topnav2{
+    .container1{
+        display: none;
+    }
+    .topnav2{
         display: none;
     }
 }
