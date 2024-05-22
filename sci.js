@@ -8,7 +8,13 @@ function show(x) {
     }
 }
 
-function open(x) {
+function my_menu(x) {
     x.classList.toggle("change");
+    if (document.getElementById("myTopnav2").style.display == "flex") {
+        document.getElementById("myTopnav2").style.display = "none";
+    }
+    else {
+        document.getElementById("myTopnav2").style.display = "flex";
+    }
 }
 
