@@ -8,6 +8,7 @@ function show(x) {
     }
 }
 
-function open(x){
+function open(x) {
     x.classList.toggle("change");
 }
+

@@ -12,13 +12,31 @@ body {
     object-fit: contain;
 }
 
-@media screen and (min-width: 1043px) {
+@media screen and (min-width: 1050px) {
     .header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         height: 100%;
     }
+
+    .container1, .topnav2{
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 1050px) {
+    .topnav{
+        display: none;
+    }
+
+    .topnav2{
+        display: none;
+        flex-direction: column;
+        color: white;
+        background-color: black;
+    }
+    
 }
 /*important fonts*/
 @font-face {
@@ -111,21 +129,7 @@ This class makes the topnav look good on small screens (display the links vertic
     align-items: center;
 }
 
-.container1{
-    display: none;
-}
 
-.change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-}
-
-.change .bar2 {
-    opacity: 0;
-}
-
-.change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-}
 
 
 /* Style the links inside the navigation bar */
