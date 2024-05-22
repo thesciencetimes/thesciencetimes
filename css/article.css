@@ -4,9 +4,10 @@
     text-align: left;
 }
 
-@media screen and (min-width: 728px) {
-    .article_in_contain {
-        width: 720px;
+@media screen{
+    .article_in_contain{
+        max-width: 100%;
+        width: 80%;
     }
 }
 
