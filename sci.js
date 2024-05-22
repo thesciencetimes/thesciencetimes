@@ -13,5 +13,6 @@ function open(x){
 }
 
 if (window.innerWidth<1036) {
-    ​$('topnav').css('display'​​​​​​​​​​​​​​​​​​​​​​​​​​​,'block');​​​​​​
+    ​$('topnav').css('display'​​​​​​​​​​​​​​​​​​​​​​​​​​​,'none');​​​​​​
+    ​$('container1').css('display'​​​​​​​​​​​​​​​​​​​​​​​​​​​,'block');​​​​​​
 }
