@@ -12,6 +12,30 @@ body {
     object-fit: contain;
 }
 
+.article_in_contain {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    box-sizing: border-box;
+}
+
+.article_out_contain {
+    margin-right: 10vw;
+    margin-left: 10vw;
+    text-align: left;
+}
+
+@media screen{
+    .article_in_contain{
+        max-width: 100%;
+        width: 80%;
+    }
+}
+
+.text_front a:hover{
+    color: yellowgreen;
+}
+
 @media screen and (min-width: 1050px) {
     .header {
         display: flex;
@@ -20,31 +44,34 @@ body {
         height: 100%;
     }
 
-    .container1{
+    .container1 {
         display: none;
     }
-    .topnav2{
+
+    .topnav2 {
         display: none;
     }
 }
 
-@media  screen and (max-width: 1050px) {
-    .topnav{
+@media screen and (max-width: 1050px) {
+    .topnav {
         display: none;
     }
+
     .container1 {
         display: inline-block;
         cursor: pointer;
-      }
+    }
 
-    .topnav2{
+    .topnav2 {
         display: none;
         flex-direction: column;
         color: white;
-        background-color: black;
+        display: block;
     }
-    
+
 }
+
 /*important fonts*/
 @font-face {
     font-family: "Joliet";
@@ -71,7 +98,7 @@ body {
     .topnav a {
         float: none;
     }
-    
+
 }
 
 /*lovely header that wasted one week because of typos :>*/
@@ -131,7 +158,7 @@ This class makes the topnav look good on small screens (display the links vertic
     position: relative;
 }
 
-.toptop{
+.toptop {
     display: flex;
     align-items: center;
 }
@@ -162,16 +189,17 @@ This class makes the topnav look good on small screens (display the links vertic
 
 
 
-.fa{
+.fa {
     text-decoration: none;
     color: black;
     padding-left: 1vw;
 }
 
-.fa:active{
+.fa:active {
     text-decoration: none;
 }
-.fa:hover{
+
+.fa:hover {
     opacity: 0.7;
 }
 
@@ -198,7 +226,7 @@ footer {
     width: 100%;
 }
 
-.address{
+.address {
     font-size: 20px;
     font-style: normal;
     text-align: left;
@@ -211,21 +239,22 @@ footer {
     position: static;
 }
 
-.copyright{
+.copyright {
     text-align: center;
-    color:rgba(45, 20, 20, 0.626);
+    color: rgba(45, 20, 20, 0.626);
     letter-spacing: 2px;
     font-weight: 900;
     display: block;
 }
-.icon{
+
+.icon {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
 }
 
-.top_footer{
+.top_footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

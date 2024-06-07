@@ -1,8 +1,3 @@
-.article_out_contain {
-    margin-right: 10vw;
-    margin-left: 10vw;
-    text-align: left;
-}
 
 @media screen{
     .article_in_contain{
@@ -27,13 +22,6 @@
         justify-content: space-between;
         height: 100%;
     }
-}
-
-.article_in_contain {
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    box-sizing: border-box;
 }
 
 .post_top h1 {
