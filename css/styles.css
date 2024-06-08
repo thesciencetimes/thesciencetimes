@@ -13,7 +13,7 @@ a{
 }
 
 
-a:hover{
+.articlesmall a:hover{
     text-decoration: none;
     color: yellowgreen;
 }
