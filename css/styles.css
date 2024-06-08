@@ -11,6 +11,12 @@ a{
     text-decoration: none;
     color: black;
 }
+
+
+a:hover{
+    text-decoration: none;
+    color: yellowgreen;
+}
 body {
     margin: 0;
     padding: 0;
