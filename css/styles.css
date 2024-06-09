@@ -5,6 +5,7 @@
 html {
     height: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 a {
@@ -517,32 +518,11 @@ footer {
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url(../homepage/newsletter.png);
-
 }
 
-.textlead {
+#mc_embed_shell {
     position: relative;
     top: 50%;
-    left: 50%;
+    left: 80%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-}
-
-.textlead h3 {
-    font-size: 30px;
-    font-family: Joliet;
-    letter-spacing: 3px;
-    font-weight: 900;
-    font-size: 50px;
-    padding: 0;
-    margin: 0;
-}
-
-.textlead p{
-    font-size: 20px;
-    font-family: 'Glacial';
-    padding: 0;
-    margin: 10px 0 0 0;
-    font-weight: lighter;
 }
