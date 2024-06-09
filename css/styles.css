@@ -7,16 +7,29 @@ html {
     overflow-y: scroll;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
 
-.articlesmall a:hover{
+.articlesmall a:hover {
     text-decoration: none;
     color: yellowgreen;
+    cursor: pointer;
+
 }
+
+
+.button_fot button:hover {
+    text-decoration: none;
+    color: yellowgreen;
+    cursor: pointer;
+
+}
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -345,4 +358,177 @@ footer {
     color: black;
     font-family: 'lovelo';
     font-size: 22px;
+}
+
+.articlesmall p {
+    font-family: 'Glacial';
+}
+
+.articlesmall h3 {
+    height: 40px;
+    font-family: Joliet;
+    letter-spacing: 2px;
+    font-weight: 650;
+}
+
+.type p {
+    font-family: 'Glacial';
+}
+
+.things p {
+    font-family: 'Joliet';
+    font-size: 24px;
+}
+
+.textee {
+    font-family: 'Glacial';
+}
+
+.button_fot p {
+    font-family: 'Glacial';
+}
+
+.honor {
+    margin-top: 90px;
+    background-size: 100%;
+    position: relative;
+
+}
+
+.honor::before {
+    content: "";
+    background-image: url(../homepage/honor.png);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 275px;
+    left: 0px;
+    opacity: 0.5;
+    border-radius: 10%;
+}
+
+.honor h3 {
+    margin-left: 25px;
+    color: black;
+    font-family: Joliet;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-weight: 659;
+    position: relative;
+    margin-top: 14px;
+    width: 20px;
+}
+
+.honor p {
+    margin-left: 25px;
+    line-break: 6px;
+    color: black;
+    font-family: Joliet;
+    letter-spacing: 3px;
+    position: relative;
+    font-size: 28px;
+    margin-top: 130px;
+    font-weight: 800;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.honor #description {
+    margin-left: 25px;
+    line-break: 6px;
+    font-family: 'Glacial';
+    letter-spacing: 3px;
+    position: relative;
+    font-size: 23px;
+    margin-top: 0;
+    padding: 0;
+    font-weight: 100;
+}
+
+.second::before {
+    content: "";
+    background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 275px;
+    background-image: url(../homepage/new.png);
+    left: 0px;
+    opacity: 0.5;
+    border-radius: 10%;
+}
+
+.second p {
+    margin-right: 31px;
+    line-break: 6px;
+    color: black;
+    font-family: Joliet;
+    letter-spacing: 3px;
+    position: relative;
+    font-size: 28px;
+    margin-top: 130px;
+    font-weight: 800;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.second #description {
+    margin-right: 31px;
+    line-break: 6px;
+    color: black;
+    font-family: 'Glacial';
+    letter-spacing: 3px;
+    position: relative;
+    font-size: 23px;
+    margin-top: 0;
+    padding: 0;
+    font-weight: 100;
+}
+
+.second {
+    margin-top: 90px;
+    background-size: 100%;
+    position: relative;
+    border-radius: 20%;
+}
+
+.second h3 {
+    margin-right: 31px;
+    font-family: Joliet;
+    letter-spacing: 3px;
+    font-size: 32px;
+    font-weight: 900;
+    position: relative;
+    margin-top: 14px;
+}
+
+.sideoff {
+    margin-left: 3.5px;
+}
+
+.newsletter {
+    width: 100%;
+    height: 70vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../homepage/newsletter.png);
+
+}
+
+#textlead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textlead h3 {
+    font-size: 30px;
+    font-family: Joliet;
+    letter-spacing: 3px;
+    font-weight: 900;
 }

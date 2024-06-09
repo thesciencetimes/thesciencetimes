@@ -202,3 +202,14 @@ div #ref {
     font-family: "Glacial";
     font-size: 19px;
 }
+
+.articlesmall p{
+    font-family: 'Glacial';
+}
+
+.articlesmall h3{
+    height: 40px;
+    font-family: 'Joliet';
+    letter-spacing: 2px;
+    font-weight: 900;
+}
