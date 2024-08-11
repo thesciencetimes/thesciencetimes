@@ -5,6 +5,8 @@
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html lang="en">
 
+<!-- dont put css styles in elements, it makes it harder to manage and modify css -->
+
 <head>
     <!--why is there a opening head tag nesting in a head?-->
     <!--<head>-->
@@ -13,7 +15,7 @@
     <title>The Science Times</title>
     <meta name="The Science Times" content="The Science Times">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="white-on-clear.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="sci.js"></script>
@@ -56,15 +58,12 @@
 <body>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <![endif]-->
     <header><!--add BODY THEN ADD NAV-->
-        <div class="headlogo">
-            <a href="index.html">
-                <div class="logo">
-                    <img src="logo.PNG"></img>
-                </div>
-            </a>
-        </div>
+        <a href="index.html">
+            <!-- should be replaced with a .svg file with a clear background instead -->
+            <img src="logo.PNG" class="logo"></img>
+        </a>
         <div class="topnav" id="myTopnav">
             <a href="index.html">Home</a>
             <a href="biology.html">Biology</a>
@@ -81,367 +80,169 @@
         </div>
     </header>
     <main>
-        <div class="article_out_contain">
-            <div class="article_in_contain" style="display: flex; flex-direction: column;">
-                <div class="inside ft_post" style="margin-top: 25px; display: inline-flex;">
-                    <!-- code for .inside -->
-                    <!-- Full-width images with number and caption text -->
-
-                    <div class="text_front" style="float: left">
-                        <div class="category" style="height: 3vh; margin-top: 2vw;">
-                            <div
-                                style="width: 100%; height: 100%; position: relative; display: inline-flex; align-items: center;">
-                                <a href="physics.html">
-                                    <div
-                                        style="left: 0px; top: 0px; position: absolute; color: rgba(0, 0, 0, 0.79); font-size: 16px; font-family: 'Glacial';">
-                                        physics</div>
-                                </a>
-                                <div
-                                    style="width: 17px; height: 0px; left: 53px; top: 2px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border: 0.50px rgba(0, 0, 0, 0.70) solid">
-                                </div>
-                                <!-- line -->
-                                <a href="issues/apr2024.html">
-                                    <div
-                                        style="left: 55px; top: 0px; position: absolute; color: rgba(0, 0, 0, 0.79); font-size: 16px; font-family: 'Glacial'; font-weight: 200;">
-                                        issue no. 3 </div>
-                                </a>
-                            </div>
+        <div class="inside ft_article">
+            <!-- code for .inside -->
+            <!-- Full-width images with number and caption text -->
+            <div class="ft_article_cont">
+                <section>
+                    <div class="category">
+                        <div class="subject">
+                            <a href="physics.html">physics</a>
                         </div>
-                        <div class="titleft" style="margin-top: 2vw; width:fit-content">
-                            <h2
-                                style="font-size: 3.4vw; font-family: Joliet; font-weight: 650; margin-bottom: 2vw; margin-top: 2vw;">
-                                The Lord of the Rings</h2>
-                        </div>
-                        <div class="leadarti"
-                            style="font-size: 1,02vw; width: 30vw; font-family: 'Glacial'; margin-top: 2vw;">
-                            <p style="font-weight: 100;">In this universe, and potentially other
-                                universes if the multiverse were to exist,
-                                some planets have rings around them.</p>
-
-                            <a href="physics/npn-lord.html" style="text-decoration: none; color: black;">
-                                <p style="font-weight:550;">read article &#8594;</p>
-                            </a>
-                            <p>By <a href="contributors/writers/namphong_nguyen.html"
-                                    style="text-decoration: none; color: black; font-family: lovelo;">Nam Phong
-                                    Nguyen</a> </p>
+                        <div class="seperator"></div>
+                        <div class="issue">
+                            <a href="issues/apr2024.html">issue no. 3</a>
                         </div>
                     </div>
-
-                    <div class="coverout" style="float: left;">
-                        <img src="physics/npn-lord/cover.png" alt="J1407b's ring system"
-                            style="border-radius: 10%; width:100%;">
-
-                    </div>
-                </div>
-                <hr style="border: 0;
-                clear:both;
-                display:block;
-                width: 100%;               
-                background-color: black;
-                height: 1px;">
-                <section id="2nd">
-                    <div class="2nd inside" style=" margin-left: 20px; margin-right: 20px">
-                        <div class="layout_arti"
-                            style="display: grid; float: left; border-right: 1px black solid; height: 100%; grid-template-columns: 20vw 20vw; grid-template-rows: 50vh 50vh;  column-gap: 5vw; row-gap: 15vh; width: 640px; height:1100px;">
-                            <div class="articlesmall" style="margin-top: 2vw;">
-
-                                <div style="height: 13vh"><img src="biology/yjl+ahk-sense/cover.jpg"
-                                        alt="The aging process of humans" style="max-height: 100%"></div>
-                                <p><a href="biology.html">biology</a> | <a href="issues/apr2024.html">issue no. 3</a>
-                                </p>
-                                <h3 id="title" style="height: 40px;">Viewing Senescence from An Evolutionary Perspective
-                                </h3>
-                                <p id="lead" style="height: 80px;">Aging is inevitable. Although the average
-                                    lifespan of humanity has dramatically
-                                    increased due to developments in diets,
-                                    hygiene, and medical care, death is still an
-                                    unavoidable destiny.</p>
-                                <a href="biology/yjl+ahk-sense.html" style="text-decoration: none; color: black;">
-                                    <p style="font-weight:550;margin-top: 50px;">read article &#8594;</p>
-                                </a>
-                                <p>By <a id="authorinsmall"href="contributors/writers/yoonjin_lee.html"
-                                        style="text-decoration: none; color: black;">Yoonjin Lee</a>
-                                    & <a id="authorinsmall" href="contributors/writers/ahhyyeon_kim.html"
-                                        style="text-decoration: none; color: black;">Ahhyeon
-                                        Kim</a> </p>
-                            </div>
-
-                            <div class="articlesmall" style="margin-top: 20px; margin-right: 20px;">
-
-                                <div style="height: 15vh"><img src="chemistry/h2o-bk/screen.png"
-                                        alt="The aging process of humans" style="max-height: 100%"></div>
-                                <p><a href="chemistry.html">chemistry</a> | <a href="issues/apr2024.html">issue no.
-                                        2</a></p>
-                                <h3 id="title" style="height: 40px;"><a href="chemistry/h2o-bk.html">H<sub>2</sub>O: the
-                                        source of life and the path to
-                                        death</a></h3>
-                                <p id="lead" style="height: 80px;">Water (H<sub style="font-size: 10px;">2</sub>O),
-                                    which
-                                    is translucent
-                                    without color, odor, or taste, would be
-                                    the most priceless resource that is inevitable to persist in both humanity and the
-                                    ecosystem
-                                    of Earth,
-                                    the foundation of all living organisms.</p>
-                                <a href="chemistry/h2o-bk.html" style="text-decoration: none; color: black;">
-                                    <p style="font-weight:550; margin-top: 50px;">read article &#8594;</p>
-                                </a>
-                                <p>By <a id="authorinsmall" href="contributors/writers/boosung_kwak.html"
-                                        style="text-decoration: none; color: black;">Boo Sung
-                                        Kwak</a> </p>
-                            </div>
-
-                            <div class="articlesmall">
-
-                                <div style="height: 15vh"><img src="biology/alzhe-jil/cover-img.jpg"
-                                        alt="The aging process of humans" style="max-height: 100%;"></div>
-                                <p><a href="biology.html">biology</a> | <a href="issues/mar2024.html">issue no.
-                                        2</a></p>
-                                <h3 id="title" style="height: 40px; "><a href="biology/alzhe-jl.html">The Fight against
-                                        Alzheimer’s</a></h3>
-                                <p id="lead" style="height: 80px;">Alzheimer's is a disease characterized by
-                                    memory loss and impaired reasoning. It's
-                                    scary
-                                    because there is no cure; once a person is
-                                    diagnosed with Alzheimer's, it progressively
-                                    worsens until they lose most of their
-                                    memories.</p>
-                                <a href="biology/alzhe-jl.html" style="text-decoration: none; color: black;">
-                                    <p style="font-weight:550; margin-top: 50px;">read article &#8594;</p>
-                                </a>
-                                <p>By <a id="authorinsmall" href="contributors/editors/hyunsong_lee.html"
-                                        style="text-decoration: none; color: black;">Hyunsong Lee
-                                        (Julie)</a> </p>
-                            </div>
-
-
-                            <div class="articlesmall" style="margin-right: 20px;">
-
-                                <div style="height: 15vh"><img src="chemistry/h2o-bk/screen.png"
-                                        alt="The aging process of humans" style="max-height: 100%"></div>
-                                <p><a href="chemistry.html">chemistry</a> | <a href="issues/apr2024.html">issue no.
-                                        2</a></p>
-                                <h3 id="title" style="height: 40px;"><a href="chemistry/h2o-bk.html">H<sub>2</sub>O: the
-                                        source of life and the path to
-                                        death</a></h3>
-                                <p id="lead" style="height: 80px;">Water (H<sub style="font-size: 10px;">2</sub>O),
-                                    which
-                                    is translucent
-                                    without color, odor, or taste, would be
-                                    the most priceless resource that is inevitable to persist in both humanity and the
-                                    ecosystem
-                                    of Earth,
-                                    the foundation of all living organisms.</p>
-                                <a href="chemistry/h2o-bk.html" style="text-decoration: none; color: black;">
-                                    <p style="font-weight:550; margin-top: 50px;">read article &#8594;</p>
-                                </a>
-                                <p>By <a id="authorinsmall" href="contributors/writers/boosung_kwak.html"
-                                        style="text-decoration: none; color: black;">Boo Sung
-                                        Kwak</a> </p>
-                            </div>
-
-                        </div>
-                        <div class="sideoff" style="float: right; display: flex; flex-direction: column; width:275px; ">
-                            <div class="crossword" style="width: 275px;background-color: yellow; height: 300px; border-radius: 10%; border: 1px solid black;   box-shadow: 5px 8px black;
-">
-                                <div class="type" style="margin-left: 15px">
-                                    <p><b><a href="fun.html">crossword</a></b> | <a href="issues/feb2024.html">issue no.
-                                            2</a></p>
-                                </div>
-                                <div class="things"
-                                    style="margin-left: 15px; display: inline-flex; margin-top: 5px; align-items: center; height: 100px; margin-bottom: 10px;">
-                                    <svg style="float: left" width="170" height="100" viewBox="0 0 117 109" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <mask id="path-1-outside-1_86_207" maskUnits="userSpaceOnUse" x="0" y="0"
-                                            width="25" height="25" fill="black">
-                                            <rect fill="white" width="25" height="25" />
-                                            <path
-                                                d="M2 5.79747C2 3.70019 3.70018 2 5.79747 2H23.2658V23.2658H2V5.79747Z" />
-                                        </mask>
-                                        <path d="M2 5.79747C2 3.70019 3.70018 2 5.79747 2H23.2658V23.2658H2V5.79747Z"
-                                            fill="white" />
-                                        <path
-                                            d="M0.481013 5.79747C0.481013 2.86127 2.86127 0.481013 5.79747 0.481013H24.0253L22.5063 3.51899H5.79747C4.5391 3.51899 3.51899 4.5391 3.51899 5.79747L0.481013 5.79747ZM24.0253 24.0253H0.481013L3.51899 22.5063H22.5063L24.0253 24.0253ZM0.481013 24.0253V5.79747C0.481013 2.86127 2.86127 0.481013 5.79747 0.481013L5.79747 3.51899C4.5391 3.51899 3.51899 4.5391 3.51899 5.79747V22.5063L0.481013 24.0253ZM24.0253 0.481013V24.0253L22.5063 22.5063V3.51899L24.0253 0.481013Z"
-                                            fill="black" mask="url(#path-1-outside-1_86_207)" />
-                                        <mask id="path-3-outside-2_86_207" maskUnits="userSpaceOnUse" x="0" y="23.7849"
-                                            width="25" height="24" fill="black">
-                                            <rect fill="white" y="23.7849" width="25" height="24" />
-                                            <path d="M2 24.7849H23.2658V46.0507H2V24.7849Z" />
-                                        </mask>
-                                        <path d="M2 24.7849H23.2658V46.0507H2V24.7849Z" fill="white" />
-                                        <path
-                                            d="M2 24.7849V24.0254H0.481013V24.7849H2ZM23.2658 24.7849H24.0253V24.0254H23.2658V24.7849ZM23.2658 46.0507V46.8102H24.0253V46.0507H23.2658ZM2 46.0507H0.481013V46.8102H2V46.0507ZM2 25.5444H23.2658V24.0254H2V25.5444ZM22.5063 24.7849V46.0507H24.0253V24.7849H22.5063ZM23.2658 45.2912H2V46.8102H23.2658V45.2912ZM3.51899 46.0507V24.7849H0.481013V46.0507H3.51899Z"
-                                            fill="black" mask="url(#path-3-outside-2_86_207)" />
-                                        <mask id="path-5-outside-3_86_207" maskUnits="userSpaceOnUse" x="0" y="46.5696"
-                                            width="25" height="24" fill="black">
-                                            <rect fill="white" y="46.5696" width="25" height="24" />
-                                            <path d="M2 47.5696H23.2658V68.8354H2V47.5696Z" />
-                                        </mask>
-                                        <path d="M2 47.5696H23.2658V68.8354H2V47.5696Z" fill="white" />
-                                        <path
-                                            d="M2 47.5696V46.8101H0.481013V47.5696H2ZM23.2658 47.5696H24.0253V46.8101H23.2658V47.5696ZM23.2658 68.8354V69.5949H24.0253V68.8354H23.2658ZM2 68.8354H0.481013V69.5949H2V68.8354ZM2 48.3291H23.2658V46.8101H2V48.3291ZM22.5063 47.5696V68.8354H24.0253V47.5696H22.5063ZM23.2658 68.0759H2V69.5949H23.2658V68.0759ZM3.51899 68.8354V47.5696H0.481013V68.8354H3.51899Z"
-                                            fill="black" mask="url(#path-5-outside-3_86_207)" />
-                                        <mask id="path-7-outside-4_86_207" maskUnits="userSpaceOnUse" x="0" y="69.3545"
-                                            width="25" height="24" fill="black">
-                                            <rect fill="white" y="69.3545" width="25" height="24" />
-                                            <path
-                                                d="M2 70.3545H23.2658V91.6203H5.79747C3.70019 91.6203 2 89.9201 2 87.8228V70.3545Z" />
-                                        </mask>
-                                        <path
-                                            d="M2 70.3545H23.2658V91.6203H5.79747C3.70019 91.6203 2 89.9201 2 87.8228V70.3545Z"
-                                            fill="black" />
-                                        <path
-                                            d="M0.481013 69.595H24.0253L22.5063 71.114H3.51899L0.481013 69.595ZM24.0253 93.1393H5.79747C2.86127 93.1393 0.481013 90.759 0.481013 87.8228H3.51899C3.51899 89.0812 4.5391 90.1013 5.79747 90.1013H22.5063L24.0253 93.1393ZM5.79747 93.1393C2.86127 93.1393 0.481013 90.759 0.481013 87.8228V69.595L3.51899 71.114V87.8228C3.51899 89.0812 4.5391 90.1013 5.79747 90.1013L5.79747 93.1393ZM24.0253 69.595V93.1393L22.5063 90.1013V71.114L24.0253 69.595Z"
-                                            fill="black" mask="url(#path-7-outside-4_86_207)" />
-                                        <mask id="path-9-outside-5_86_207" maskUnits="userSpaceOnUse" x="23.7847" y="0"
-                                            width="24" height="25" fill="black">
-                                            <rect fill="white" x="23.7847" width="24" height="25" />
-                                            <path d="M24.7847 2H46.0505V23.2658H24.7847V2Z" />
-                                        </mask>
-                                        <path d="M24.7847 2H46.0505V23.2658H24.7847V2Z" fill="white" />
-                                        <path
-                                            d="M24.7847 2V0.481013H24.0252V2H24.7847ZM46.0505 2H46.81V0.481013H46.0505V2ZM46.0505 23.2658V24.0253H46.81V23.2658H46.0505ZM24.7847 23.2658H24.0252V24.0253H24.7847V23.2658ZM24.7847 3.51899H46.0505V0.481013H24.7847V3.51899ZM45.291 2V23.2658H46.81V2H45.291ZM46.0505 22.5063H24.7847V24.0253H46.0505V22.5063ZM25.5442 23.2658V2H24.0252V23.2658H25.5442Z"
-                                            fill="black" mask="url(#path-9-outside-5_86_207)" />
-                                        <rect x="24.4049" y="24.4052" width="22.0253" height="22.0253" fill="black"
-                                            stroke="black" stroke-width="0.759494" />
-                                        <rect x="24.4049" y="47.1898" width="22.0253" height="22.0253" fill="white"
-                                            stroke="black" stroke-width="0.759494" />
-                                        <mask id="path-13-outside-6_86_207" maskUnits="userSpaceOnUse" x="23.7847"
-                                            y="69.3545" width="24" height="24" fill="black">
-                                            <rect fill="white" x="23.7847" y="69.3545" width="24" height="24" />
-                                            <path d="M24.7847 70.3545H46.0505V91.6203H24.7847V70.3545Z" />
-                                        </mask>
-                                        <path d="M24.7847 70.3545H46.0505V91.6203H24.7847V70.3545Z" fill="white" />
-                                        <path
-                                            d="M24.7847 70.3545V69.595H24.0252V70.3545H24.7847ZM46.0505 70.3545H46.81V69.595H46.0505V70.3545ZM46.0505 91.6203V93.1393H46.81V91.6203H46.0505ZM24.7847 91.6203H24.0252V93.1393H24.7847V91.6203ZM24.7847 71.114H46.0505V69.595H24.7847V71.114ZM45.291 70.3545V91.6203H46.81V70.3545H45.291ZM46.0505 90.1013H24.7847V93.1393H46.0505V90.1013ZM25.5442 91.6203V70.3545H24.0252V91.6203H25.5442Z"
-                                            fill="black" mask="url(#path-13-outside-6_86_207)" />
-                                        <mask id="path-15-outside-7_86_207" maskUnits="userSpaceOnUse" x="46.5698" y="0"
-                                            width="24" height="25" fill="black">
-                                            <rect fill="white" x="46.5698" width="24" height="25" />
-                                            <path d="M47.5698 2H68.8356V23.2658H47.5698V2Z" />
-                                        </mask>
-                                        <path d="M47.5698 2H68.8356V23.2658H47.5698V2Z" fill="white" />
-                                        <path
-                                            d="M47.5698 2V0.481013H46.8103V2H47.5698ZM68.8356 2H69.5951V0.481013H68.8356V2ZM68.8356 23.2658V24.0253H69.5951V23.2658H68.8356ZM47.5698 23.2658H46.8103V24.0253H47.5698V23.2658ZM47.5698 3.51899H68.8356V0.481013H47.5698V3.51899ZM68.0762 2V23.2658H69.5951V2H68.0762ZM68.8356 22.5063H47.5698V24.0253H68.8356V22.5063ZM48.3293 23.2658V2H46.8103V23.2658H48.3293Z"
-                                            fill="black" mask="url(#path-15-outside-7_86_207)" />
-                                        <rect x="47.1901" y="24.4052" width="22.0253" height="22.0253" fill="white"
-                                            stroke="black" stroke-width="0.759494" />
-                                        <rect x="47.1901" y="47.1898" width="22.0253" height="22.0253" fill="black"
-                                            stroke="black" stroke-width="0.759494" />
-                                        <mask id="path-19-outside-8_86_207" maskUnits="userSpaceOnUse" x="46.5698"
-                                            y="69.3545" width="24" height="24" fill="black">
-                                            <rect fill="white" x="46.5698" y="69.3545" width="24" height="24" />
-                                            <path d="M47.5698 70.3545H68.8356V91.6203H47.5698V70.3545Z" />
-                                        </mask>
-                                        <path d="M47.5698 70.3545H68.8356V91.6203H47.5698V70.3545Z" fill="white" />
-                                        <path
-                                            d="M47.5698 70.3545V69.595H46.8103V70.3545H47.5698ZM68.8356 70.3545H69.5951V69.595H68.8356V70.3545ZM68.8356 91.6203V93.1393H69.5951V91.6203H68.8356ZM47.5698 91.6203H46.8103V93.1393H47.5698V91.6203ZM47.5698 71.114H68.8356V69.595H47.5698V71.114ZM68.0762 70.3545V91.6203H69.5951V70.3545H68.0762ZM68.8356 90.1013H47.5698V93.1393H68.8356V90.1013ZM48.3293 91.6203V70.3545H46.8103V91.6203H48.3293Z"
-                                            fill="black" mask="url(#path-19-outside-8_86_207)" />
-                                        <mask id="path-21-outside-9_86_207" maskUnits="userSpaceOnUse" x="69.3545" y="0"
-                                            width="24" height="25" fill="black">
-                                            <rect fill="white" x="69.3545" width="24" height="25" />
-                                            <path
-                                                d="M70.3545 2H87.8228C89.9201 2 91.6203 3.70018 91.6203 5.79747V23.2658H70.3545V2Z" />
-                                        </mask>
-                                        <path
-                                            d="M70.3545 2H87.8228C89.9201 2 91.6203 3.70018 91.6203 5.79747V23.2658H70.3545V2Z"
-                                            fill="black" />
-                                        <path
-                                            d="M69.595 0.481013H87.8228C90.759 0.481013 93.1393 2.86127 93.1393 5.79747L90.1013 5.79747C90.1013 4.5391 89.0812 3.51899 87.8228 3.51899H71.114L69.595 0.481013ZM93.1393 24.0253H69.595L71.114 22.5063H90.1013L93.1393 24.0253ZM69.595 24.0253V0.481013L71.114 3.51899V22.5063L69.595 24.0253ZM87.8228 0.481013C90.759 0.481013 93.1393 2.86127 93.1393 5.79747V24.0253L90.1013 22.5063V5.79747C90.1013 4.5391 89.0812 3.51899 87.8228 3.51899V0.481013Z"
-                                            fill="black" mask="url(#path-21-outside-9_86_207)" />
-                                        <mask id="path-23-outside-10_86_207" maskUnits="userSpaceOnUse" x="69.3545"
-                                            y="23.7849" width="24" height="24" fill="black">
-                                            <rect fill="white" x="69.3545" y="23.7849" width="24" height="24" />
-                                            <path d="M70.3545 24.7849H91.6203V46.0507H70.3545V24.7849Z" />
-                                        </mask>
-                                        <path d="M70.3545 24.7849H91.6203V46.0507H70.3545V24.7849Z" fill="white" />
-                                        <path
-                                            d="M70.3545 24.7849V24.0254H69.595V24.7849H70.3545ZM91.6203 24.7849H93.1393V24.0254H91.6203V24.7849ZM91.6203 46.0507V46.8102H93.1393V46.0507H91.6203ZM70.3545 46.0507H69.595V46.8102H70.3545V46.0507ZM70.3545 25.5444H91.6203V24.0254H70.3545V25.5444ZM90.1013 24.7849V46.0507H93.1393V24.7849H90.1013ZM91.6203 45.2912H70.3545V46.8102H91.6203V45.2912ZM71.114 46.0507V24.7849H69.595V46.0507H71.114Z"
-                                            fill="black" mask="url(#path-23-outside-10_86_207)" />
-                                        <mask id="path-25-outside-11_86_207" maskUnits="userSpaceOnUse" x="69.3545"
-                                            y="46.5696" width="24" height="24" fill="black">
-                                            <rect fill="white" x="69.3545" y="46.5696" width="24" height="24" />
-                                            <path d="M70.3545 47.5696H91.6203V68.8354H70.3545V47.5696Z" />
-                                        </mask>
-                                        <path d="M70.3545 47.5696H91.6203V68.8354H70.3545V47.5696Z" fill="white" />
-                                        <path
-                                            d="M70.3545 47.5696V46.8101H69.595V47.5696H70.3545ZM91.6203 47.5696H93.1393V46.8101H91.6203V47.5696ZM91.6203 68.8354V69.5949H93.1393V68.8354H91.6203ZM70.3545 68.8354H69.595V69.5949H70.3545V68.8354ZM70.3545 48.3291H91.6203V46.8101H70.3545V48.3291ZM90.1013 47.5696V68.8354H93.1393V47.5696H90.1013ZM91.6203 68.0759H70.3545V69.5949H91.6203V68.0759ZM71.114 68.8354V47.5696H69.595V68.8354H71.114Z"
-                                            fill="black" mask="url(#path-25-outside-11_86_207)" />
-                                        <mask id="path-27-outside-12_86_207" maskUnits="userSpaceOnUse" x="69.3545"
-                                            y="69.3545" width="24" height="24" fill="black">
-                                            <rect fill="white" x="69.3545" y="69.3545" width="24" height="24" />
-                                            <path
-                                                d="M70.3545 70.3545H91.6203V87.8228C91.6203 89.9201 89.9201 91.6203 87.8228 91.6203H70.3545V70.3545Z" />
-                                        </mask>
-                                        <path
-                                            d="M70.3545 70.3545H91.6203V87.8228C91.6203 89.9201 89.9201 91.6203 87.8228 91.6203H70.3545V70.3545Z"
-                                            fill="white" />
-                                        <path
-                                            d="M69.595 69.595H93.1393L90.1013 71.114H71.114L69.595 69.595ZM93.1393 87.8228C93.1393 90.759 90.759 93.1393 87.8228 93.1393H69.595L71.114 90.1013H87.8228C89.0812 90.1013 90.1013 89.0812 90.1013 87.8228H93.1393ZM69.595 93.1393V69.595L71.114 71.114V90.1013L69.595 93.1393ZM93.1393 69.595V87.8228C93.1393 90.759 90.759 93.1393 87.8228 93.1393V90.1013C89.0812 90.1013 90.1013 89.0812 90.1013 87.8228V71.114L93.1393 69.595Z"
-                                            fill="black" mask="url(#path-27-outside-12_86_207)" />
-                                        <path
-                                            d="M79.3086 107.759H110.887C114.207 107.759 116.413 104.323 115.031 101.305L99.8379 68.133C99.6561 67.736 99.562 67.3045 99.562 66.8679V59.9409C99.562 59.4003 100 58.962 100.541 58.962H100.76C102.019 58.962 103.039 57.9419 103.039 56.6835C103.039 55.4252 102.019 54.4051 100.76 54.4051H89.4358C88.1774 54.4051 87.1573 55.4252 87.1573 56.6835C87.1573 57.9419 88.1774 58.962 89.4358 58.962H89.6552C90.1958 58.962 90.6341 59.4003 90.6341 59.9409V66.868C90.6341 67.3045 90.54 67.736 90.3582 68.133L75.1655 101.305C73.7831 104.323 75.9888 107.759 79.3086 107.759Z"
-                                            fill="url(#paint0_linear_86_207)" stroke="black" stroke-width="1.51899" />
-                                        <defs>
-                                            <linearGradient id="paint0_linear_86_207" x1="95.098" y1="38.4557"
-                                                x2="95.098" y2="99.6676" gradientUnits="userSpaceOnUse">
-                                                <stop offset="0.695" stop-color="white" />
-                                                <stop offset="1" stop-color="#65C3DC" />
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    <p id="title"
-                                        style="float: right; margin-bottom: 0;padding-bottom: 40px; word-break: break-word; font-size: 30px; margin-left: 15px">
-                                        <b>Chemistry Crossword Puzzle</b>
-                                    </p>
-
-                                </div>
-                                <div class="textee" style="margin-left: 15px; margin-bottom: 10px;">
-                                    <p id="author" style="margin: 0 0 5px 0; font-size: 22px; "><i>Donghyun
-                                            Kim</i></p>
-                                    <p style="margin: 0; font-size: 17px; padding:0;">Can you <b>complete</b> it?</p>
-                                </div>
-                                <div class="button_fot">
-                                    <a href="fun/fun_march.html" style="height:29px; width: 90%;"><button type="button"
-                                            style="text-align: center;  margin-top: 8px;width: 90%; margin-left: 10px; margin-right: 10px; height:40px; background-color: white; border-radius: 105px;">
-                                            <p style="font-size: 15px; text-align: center; padding: 0; margin: 0;">Play!
-                                            </p>
-                                        </button></a>
-                                </div>
-                            </div>
-                            <div class="honor" style="height: 300px;">
-                                <h3 id="title_honor">
-                                    Honorable Mention
-                                </h3>
-                                <p id="description_title">
-                                    Duy Anh Nguyen
-                                </p>
-
-                                <p id="description">
-                                    Co-Editor-in-Chief
-                                </p>
-
-                            </div>
-
-                            <div class="second" style="height: 300px; text-align: right;">
-                                <h3 id="title_honor">
-                                    New Member
-                                </h3>
-                                <p id="description_title">
-                                    Tuan Khoi Nguyen
-                                </p>
-
-                                <p id="description">
-                                    Web Designer
-                                </p>
-
-                            </div>
-                        </div>
-                        <br>
-                    </div>
-
+                    <!-- titleft... oh wait its title_ft? :P-->
+                    <a class="title_ft">The Lord of the Rings</a>
+                    <p class="desc_ft">In this universe, and potentially other universes if the multiverse were to exist, some planets have rings around them.</p>
+                </section>
+                <section>
+                    <a class="read_article" id="read_ft_article" href="physics/npn-lord.html">read article</a>
+                    <p class="writer">By <a class="writer_name" href="contributors/writers/namphong_nguyen.html">Nam Phong Nguyen</a></p>
                 </section>
             </div>
+            <img class="cover_img" src="physics/npn-lord/cover.png" alt="J1407b's ring system">
+        </div>
+        <hr class="horizontal_hr">
+        <div class="more_content">
+            <div class="articles">
+                <div class="article">
+                    <section>
+                        <img class="article_img" src="biology/yjl+ahk-sense/cover.webp" alt="The aging process of humans">
+                        <div class="category" id="category_article">
+                            <div class="subject">
+                                <a href="biology.html">biology</a>
+                            </div>
+                            <div class="seperator"></div>
+                            <div class="issue">
+                                <a href="issues/apr2024.html">issue no. 3</a>
+                            </div>
+                        </div>
+                        <h3 class="article_title">Viewing Senescence from An Evolutionary Perspective</h3>
+                        <p class="article_desc">Aging is inevitable. Although the average lifespan of humanity has dramatically increased due to developments in diets, hygiene, and medical care, death is still an unavoidable destiny.</p>
+                    </section>
+                    <section>
+                        <a class="read_article" href="biology/yjl+ahk-sense.html">read article</a>
+                        <p class="writer">By <a class="writer_name" href="contributors/writers/yoonjin_lee.html">Yoonjin Lee</a> & <a class="writer_name" href="contributors/writers/ahhyyeon_kim.html">Ahhyeon Kim</a></p>
+                    </section>
+                </div>
+                <div class="article">
+                    <section>
+                        <img class="article_img" src="chemistry/h2o-bk/screen.png" alt="The aging process of humans">
+                        <div class="category" id="category_article">
+                            <div class="subject">
+                                <a href="chemistry.html">chemistry</a>
+                            </div>
+                            <div class="seperator"></div>
+                            <div class="issue">
+                                <a href="issues/apr2024.html">issue no. 2</a>
+                            </div>
+                        </div>
+                        <h3 class="article_title">H₂O: the source of life and the path to death</h3>
+                        <p class="article_desc">Water (H₂O), which is translucent without color, odor, or taste, would be the most priceless resource that is inevitable to persist in both humanity and the ecosystem of Earth, the foundation of all living organisms.</p>
+                    </section>
+                    <section>
+                        <a class="read_article" href="chemistry/h2o-bk.html">read article</a>
+                        <p class="writer">By <a class="writer_name" href="contributors/writers/boosung_kwak.html">Boo Sung Kwak</a></p>
+                    </section>
+                </div>
+                <div class="article">
+                    <section>
+                        <img class="article_img" src="biology/alzhe-jil/cover-img.jpg" alt="The aging process of humans">
+                        <div class="category" id="category_article">
+                            <div class="subject">
+                                <a href="biology.html">biology</a>
+                            </div>
+                            <div class="seperator"></div>
+                            <div class="issue">
+                                <a href="issues/apr2024.html">issue no. 2</a>
+                            </div>
+                        </div>
+                        <h3 class="article_title">The Fight against Alzheimer’s</h3>
+                        <p class="article_desc">Alzheimer's is a disease characterized by memory loss and impaired reasoning. It's scary because there is no cure; once a person is diagnosed with Alzheimer's, it progressively worsens until they lose most of their memories.</p>
+                    </section>
+                    <section>
+                        <a class="read_article" href="biology/alzhe-jl.html">read article</a>
+                        <p class="writer">By <a class="writer_name" href="contributors/editors/hyunsong_lee.html">Hyunsong Lee (Julie)</a></p>
+                    </section>
+                </div>
+                <div class="article">
+                    <section>
+                        <img class="article_img" src="chemistry/h2o-bk/screen.png" alt="The aging process of humans">
+                        <div class="category" id="category_article">
+                            <div class="subject">
+                                <a href="chemistry.html">chemistry</a>
+                            </div>
+                            <div class="seperator"></div>
+                            <div class="issue">
+                                <a href="issues/apr2024.html">issue no. 2</a>
+                            </div>
+                        </div>
+                        <h3 class="article_title">H₂O: the source of life and the path to death</h3>
+                        <p class="article_desc">Water (H₂O), which is translucent without color, odor, or taste, would be the most priceless resource that is inevitable to persist in both humanity and the ecosystem of Earth, the foundation of all living organisms.</p>
+                    </section>
+                    <section>
+                        <a class="read_article" href="chemistry/h2o-bk.html">read article</a>
+                        <p class="writer">By <a class="writer_name" href="contributors/writers/boosung_kwak.html">Boo Sung Kwak</a></p>
+                    </section>
+                </div>
+            </div>
+            <div class="vert_seperator"></div>
+            <div class="sidebar">
+                <div class="crossword">
+                    <div class="category">
+                        <div class="subject" id="crossword">
+                            <a href="fun.html">crossword</a>
+                        </div>
+                        <div class="seperator"></div>
+                        <div class="issue">
+                            <a href="issues/feb2024.html">issue no. 2</a>
+                        </div>
+                    </div>
+                    <div class="crossword_cont">
+                        <img src="/chemistry_crossword_icon.svg" alt="A flat illustration of a crossword with a flask full of blue liquid in front of it">
+                        <p class="crossword_title">Chemistry<br>Crossword<br>Puzzle</p>
+                    </div>
+                    <p class="crossword_author">Donghyun Kim</p>
+                    <p class="crossword_lead">Can you complete it?</p>
+                    <button class="crossword_btn" onclick="window.location.href='fun/fun_march.html'">Play!</button>
+                </div>
+                <div class="honor_container">
+                    <div class="honor_left">
+                        <img class="honor_img honor_img_left" src="homepage/honor.png" alt="">
+                        <h3 class="honor_title honor_title_left">Honorable Mention</h3>
+                        <p class="honor_desc honor_desc_left">Duy Anh Nguyen • Co-Editor-in-Chief</p>
+                        <div class="honor_socials_container_left">
+                            <div class="honor_socials honor_socials_left">
+                                <a href="http://www.facebook.com/profile.php?id=100029390611108">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                                </a>
+                                <a href="https://www.instagram.com/duyanhnguyrn/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="honor_right">
+                        <img class="honor_img honor_img_right" src="homepage/MRpD3Hxd_400x400.jpg" alt="">
+                        <h3 class="honor_title honor_title_right">New Member</h3>
+                        <p class="honor_desc honor_desc_right">Tuan Khoi Nguyen • Web Designer</p>
+                        <div class="honor_socials_container_right">
+                            <div class="honor_socials honor_socials_right">
+                                <a href="https://www.facebook.com/share/98kXNjKUXpgUAsF6/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                                </a>
+                                <a href="https://www.instagram.com/flagz404_/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                                </a>
+                            </div>  
+                        </div>                   
+                    </div>
+                </div>
+        </div>
+            <br>
         </div>
         <div class="newsletter">
             <div id="mc_embed_shell">
@@ -503,23 +304,30 @@
 
         </div>
     </main>
-
     <footer>
-        <div class="footer">
-            <div class="top_footer">
-                <p class="address">Email: thesciencetimesmagazine@gmail.com
-                </p>
-                <div class="icon">
-                    <p>Visit us on these platforms...</p>
-                    <div></div>
-                    <a href="https://www.facebook.com/thesciencetimesmagazine/" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/the_science_times_/" class="fa fa-instagram"></a>
-                </div>
-            </div>
-            <p class="copyright"><span class="copy">©</span> The Science
-                Times 2023-2024.</p>
-        </div>
+        <span class="email-container">Email: <button class="email" onclick="copyEmail()">thesciencetimesmagazine@gmail.com</button><span class="popup">Copied!</span></span>
+        <p>© The Science Times 2023-2024</p>
+        <p class="socials">Visit us on these platforms... <a href="https://www.facebook.com/thesciencetimesmagazine/" class="fa fa-facebook"></a> <a href="https://www.instagram.com/the_science_times_/" class="fa fa-instagram"></a></p>            
     </footer>
+    <script>
+        const email = document.querySelector(".email");
+        const popup = document.querySelector(".popup");
+        let timer = 1;
+        function copyEmail() {
+            navigator.clipboard.writeText("thesciencetimesmagazine@gmail.com")
+            popup.classList.remove('popup-gone');
+            popup.classList.add('popup-show');
+            let timeout1 = setInterval(() => {
+                timer++
+                if (timer >= 300) {
+                    clearInterval(timeout1);
+                    timer = 1;
+                    popup.classList.remove('popup-show')
+                    popup.classList.add('popup-gone')
+                }
+            }, 1);
+        }
+    </script>
 </body>
 
 </html>
