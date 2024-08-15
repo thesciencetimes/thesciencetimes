@@ -1,0 +1,113 @@
+/*all text html????,HTML*/
+.modal {
+    height: 300px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+.text {
+    font-family: "lovelo";
+    font-size: 85px;
+    font-weight: bolder;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.agenda {
+    padding-right: 30vw;
+    text-align: left;
+}
+
+.box-article:first-child {
+    margin-top: 3vw;
+}
+
+.box-article:last-of-type {
+    border-bottom: 0px;
+}
+
+.box-article {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vw;
+    border-bottom: 2px black solid;
+    margin-bottom: 2vw;
+    width: 50vw;
+    margin-left: 5vw;
+}
+
+.box-article {
+    font-family: 'Glacial';
+}
+
+
+.ari-title {
+    font-family: 'Joliet';
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+}
+
+.ari-author {
+    font-weight: normal;
+}
+
+.ari-author a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    font-family: 'lovelo';
+    font-size: 22px;
+}
+
+.articlesmall p {
+    font-family: 'Glacial';
+}
+
+.type p {
+    font-family: 'Glacial';
+}
+
+.things p {
+    font-family: 'Joliet';
+    font-size: 24px;
+}
+
+.textee {
+    font-family: 'Glacial';
+}
+
+.button_fot p {
+    font-family: 'Glacial';
+}
+
+.honor {
+    margin-top: 90px;
+    background-size: 100%;
+    position: relative;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    text-decoration: none;
+    color: black;
+}

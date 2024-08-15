@@ -8,7 +8,7 @@
     <title>The Fight Against Alzheimer’s</title>
     <meta name="The Fight Against Alzheimer’s" content="The Fight Against Alzheimer’s by Hyun Song Lee (Julie)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link href="../css/article.css" rel="stylesheet"> <!--article-->
     <link rel="icon" href="../white-on-clear.ico" type="image/x-icon">
     <script src="../sci.js" defer></script>
@@ -60,43 +60,11 @@
             <div class="headlogo">
                 <div class="logo">
                     <a href="../index.html">
-                        <img src="../logo.PNG">
+                        <img src="../logo.svg">
                     </a>
                 </div>
             </div>
-            <div class="toptop">
-                <div class="topnav" id="myTopnav">
-                    <a href="../index.html" id="sth">Home</a>
-                    <a href="../biology.html" id="sth">Biology</a>
-                    <a href="../physics.html" id="sth">Physics</a>
-                    <a href="../chemistry.html" id="sth">Chemistry</a>
-                    <a href="../math.html" id="sth">Math</a>
-                    <a href="../tech.html" id="sth">Tech</a>
-                    <a href="../others.html" id="sth">Others</a>
-                    <a href="../issues.html" id="sth">Issues</a>
-                    <a href="../fun.html" id="sth">Fun</a>
-                    <a href="../about.html" id="sth">About</a>
-                </div>
-
-                <div class="container1" id="container1" onclick="my_menu(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                <br>
-                <div class="topnav2" id="myTopnav2">
-                    <a href="../index.html" id="sth">Home</a>
-                    <a href="../biology.html" id="sth">Biology</a>
-                    <a href="../physics.html" id="sth">Physics</a>
-                    <a href="../chemistry.html" id="sth">Chemistry</a>
-                    <a href="../math.html" id="sth">Math</a>
-                    <a href="../tech.html" id="sth">Tech</a>
-                    <a href="../others.html" id="sth">Others</a>
-                    <a href="../issues.html" id="sth">Issues</a>
-                    <a href="../fun.html" id="sth">Fun</a>
-                    <a href="../about.html" id="sth">About</a>
-                </div>
-            </div>
+        </div>
     </header>
     <main>
         <div class="article"> <!--min-width for this div-->
@@ -419,23 +387,30 @@
         <!--think about aside elements | other articles? to fill margins.-->
     </main>
 
-    <footer>
-        <div class="footer">
-            <div class="top_footer">
-                <p class="address">Email: thesciencetimesmagazine@gmail.com
-                </p>
-
-                <div class="icon">
-                    <p>Visit us on these platforms...</p>
-                    <div></div>
-                    <a href="https://www.facebook.com/thesciencetimesmagazine/" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/the_science_times_/" class="fa fa-instagram"></a>
-                </div>
-            </div>
-            <p class="copyright"><span class="copy">©</span> The Science
-                Times 2023-2024.</p>
-        </div>
+ <footer>
+        <span class="email-container">Email: <button class="email" onclick="copyEmail()">thesciencetimesmagazine@gmail.com</button><span class="popup">Copied!</span></span>
+        <p>© The Science Times 2023-2024</p>
+        <p class="socials">Visit us on these platforms... <a href="https://www.facebook.com/thesciencetimesmagazine/" class="fa fa-facebook"></a> <a href="https://www.instagram.com/the_science_times_/" class="fa fa-instagram"></a></p>            
     </footer>
+    <script>
+        const email = document.querySelector(".email");
+        const popup = document.querySelector(".popup");
+        let timer = 1;
+        function copyEmail() {
+            navigator.clipboard.writeText("thesciencetimesmagazine@gmail.com")
+            popup.classList.remove('popup-gone');
+            popup.classList.add('popup-show');
+            let timeout1 = setInterval(() => {
+                timer++
+                if (timer >= 300) {
+                    clearInterval(timeout1);
+                    timer = 1;
+                    popup.classList.remove('popup-show')
+                    popup.classList.add('popup-gone')
+                }
+            }, 1);
+        }
+    </script>
 
 </body>
 
