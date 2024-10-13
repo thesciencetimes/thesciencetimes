@@ -450,16 +450,6 @@ main {
     background-image: url(../homepage/newsletter.png);
 }
 
-footer {
-    display: flex !important;
-    justify-content: space-around;
-    font-family: 'Glacial', sans-serif;
-    background-color: #535353;
-    color: #ffffff;
-    padding: 20px;
-    font-size: 1rem;
-}
-
 .socials a {
     color: #ffffff;
 }
